@@ -71,7 +71,7 @@ def get_db_snapshot(conn):
 def reconstruct_path(stable_id, parent_id, files_df, folder_map):
     """
     Recursively reconstructs the full path for a given file.
-    Note: This provides the path within Drive, not the full C:\... path.
+    Note: This provides the path within Drive, not the full C:\\... path.
     """
     if pd.isna(parent_id) or parent_id not in folder_map:
         return files_df.loc[stable_id, 'local_title'] if stable_id in files_df.index else ''
@@ -179,4 +179,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

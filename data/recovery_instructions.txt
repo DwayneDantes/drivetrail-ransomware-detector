@@ -1,0 +1,46 @@
+
+================================================================
+                 DRIVETRAIL RECOVERY GUIDE                     
+================================================================
+
+Generated: 2025-10-20 11:09:16
+
+WARNING: RANSOMWARE ACTIVITY DETECTED - Drive sync has been paused.
+
+IMMEDIATE STEPS:
+1. DO NOT close Google Drive or this application yet
+2. Disconnect from the internet if attack is ongoing
+3. Run a full system antivirus scan
+
+RECOVERY OPTIONS:
+
+Option 1: Restore from Google Drive Version History
+----------------------------------------
+- Google Drive keeps 30 days of version history for free accounts
+- G Suite accounts have longer retention
+
+Steps:
+1. Open Google Drive in your web browser
+2. Right-click on affected files
+3. Select "Manage versions" or "Version history"
+4. Restore to the last version BEFORE the attack
+
+Option 2: Check Drive Trash
+----------------------------------------
+If files were deleted, check:
+https://drive.google.com/drive/trash
+
+Option 3: Review Quarantined Files
+----------------------------------------
+DriveTrail moved suspicious files to:
+C:\Users\My PC\Videos\drivetrail\data\quarantine
+
+BEFORE RESUMING SYNC:
+[ ] Verify ransomware has been removed from your system
+[ ] Check that encrypted files are not still present
+[ ] Review the alerts log: C:\Users\My PC\Videos\drivetrail\data\alerts.json
+
+To resume Drive sync:
+Run the command: python scripts/resume_sync.py
+
+For support: Check logs at data/response_actions.log

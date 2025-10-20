@@ -1,0 +1,53 @@
+[
+  {
+    "timestamp": "2025-10-20T11:14:58.506828",
+    "threat_level": "HIGH",
+    "probability": 0.85,
+    "affected_files_count": 5,
+    "triggering_event": {
+      "id": 11,
+      "timestamp": 1760930097.7248354,
+      "stable_id": 1584,
+      "event_type": "CREATED",
+      "local_title": "document_9.txt.encrypted",
+      "file_size": 77,
+      "old_local_title": "",
+      "full_path": "DriveTrail_TEST_DO_NOT_DELETE\\document_9.txt.encrypted"
+    },
+    "sync_paused": false
+  },
+  {
+    "timestamp": "2025-10-20T11:18:25.822051",
+    "threat_level": "HIGH",
+    "probability": 0.85,
+    "affected_files_count": 47,
+    "triggering_event": {
+      "id": 16,
+      "timestamp": 1760930304.2062569,
+      "stable_id": 1590,
+      "event_type": "CREATED",
+      "local_title": "document_0.txt.encrypted",
+      "file_size": 77,
+      "old_local_title": "",
+      "full_path": "DriveTrail_TEST_DO_NOT_DELETE\\document_0.txt.encrypted"
+    },
+    "sync_paused": true
+  },
+  {
+    "timestamp": "2025-10-20T11:22:23.126960",
+    "threat_level": "HIGH",
+    "probability": 0.85,
+    "affected_files_count": 51,
+    "triggering_event": {
+      "id": 63,
+      "timestamp": 1760930542.3107564,
+      "stable_id": 1584,
+      "event_type": "TRASHED",
+      "local_title": "document_9.txt.encrypted",
+      "file_size": 0,
+      "old_local_title": "",
+      "full_path": "DriveTrail_TEST_DO_NOT_DELETE\\document_9.txt.encrypted"
+    },
+    "sync_paused": true
+  }
+]
