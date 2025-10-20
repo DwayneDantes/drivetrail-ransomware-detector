@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+
+# Data files - You might want to upload your training data, but not raw logs or the live DB
+# For now, let's ignore the live events database to be safe.
+data/events.db
+data/events.csv
+
+# You should decide if you want to commit your raw data.
+# If Ransomware_Data.csv is very large or sensitive, add it here:
+# data/raw/Ransomware_Data.csv
