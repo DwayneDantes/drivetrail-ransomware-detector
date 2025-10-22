@@ -1,0 +1,33 @@
+{
+  "likelihood_ratios": {
+    "high_velocity": 4.68,
+    "systematic_rename": 14.36
+  },
+  "micropattern_thresholds": {
+    "high_velocity": {
+      "threshold": 50,
+      "window_seconds": 60
+    },
+    "systematic_rename": {
+      "threshold": 8,
+      "window_seconds": 60
+    }
+  },
+  "alert_thresholds": {
+    "alert": 0.31,
+    "pause": 0.37,
+    "critical": 0.72
+  },
+  "hmm_parameters": {
+    "sequence_length": 35,
+    "n_states": 2,
+    "n_sequences_per_class": 600
+  },
+  "metadata": {
+    "generated_at": "2025-10-22T08:37:25.568995",
+    "training_samples": 352876,
+    "user_events": 113,
+    "optimization_method": "optuna_bayesian",
+    "version": "2.0"
+  }
+}
