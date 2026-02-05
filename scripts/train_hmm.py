@@ -6,10 +6,15 @@ from hmmlearn.hmm import GaussianHMM
 
 # --- Configuration ---
 INPUT_DATA_PATH = os.path.join('data', 'training_features.parquet')
-MODEL_OUTPUT_PATH = os.path.join('models', 'hmm_drivetrail.joblib') # Use .joblib for scikit-learn models
+MODEL_OUTPUT_PATH = os.path.join('models', 'hmm_drivetrail.joblib')  # Use .joblib for scikit-learn models
 SEQUENCE_LENGTH = 15
 NUM_SEQUENCES_PER_CLASS = 500
-N_STATES = 2 # The number of hidden states (Benign, Malicious)
+N_STATES = 2  # The number of hidden states (Benign, Malicious)
+FEATURE_COLUMNS = [
+    'File_Delete_archived', 'File_created', 'process-related', 'network-related',
+    'file-related', 'suspicious_path', 'system_executable', 'path_length',
+    'directory_depth', 'process_name_length', 'extension_similarity', 'file_name_entropy'
+]
 
 def create_sequences(df, n_sequences, seq_length):
     """Helper function to create sequences from the dataframe."""
@@ -28,7 +33,14 @@ def main():
 
     # --- Load Data ---
     print(f"Loading data from '{INPUT_DATA_PATH}'...")
-    df = pd.read_parquet(INPUT_DATA_PATH, columns=['label', 'file_name_entropy'])
+    df = pd.read_parquet(INPUT_DATA_PATH)
+    missing_columns = [col for col in FEATURE_COLUMNS if col not in df.columns]
+    if missing_columns:
+        raise ValueError(
+            "Training data is missing required feature columns: "
+            + ", ".join(missing_columns)
+        )
+    df = df[['label'] + FEATURE_COLUMNS]
     benign_df = df[df['label'] == 0].drop('label', axis=1)
     ransom_df = df[df['label'] == 1].drop('label', axis=1)
     print(f"Loaded {len(benign_df)} benign and {len(ransom_df)} malicious samples.")
@@ -61,9 +73,10 @@ def main():
 
     # --- Align States (Interpretability) ---
     # We find the state with the higher mean file_name_entropy and label it "malicious"
-    state_means = model.means_.flatten() # Flatten to make it a simple 1D array
-    malicious_state_index = np.argmax(state_means)
-    benign_state_index = np.argmin(state_means)
+    entropy_index = FEATURE_COLUMNS.index('file_name_entropy')
+    state_means = model.means_[:, entropy_index]
+    malicious_state_index = int(np.argmax(state_means))
+    benign_state_index = int(np.argmin(state_means))
 
     print(f"\nDiscovered States (based on mean file_name_entropy):")
     print(f"  - Benign State (ID {benign_state_index}): Mean = {state_means[benign_state_index]:.4f}")
