@@ -25,6 +25,11 @@ HMM_MODEL_PATH = os.path.join('models', 'hmm_drivetrail.joblib')
 AGENT_POLLING_INTERVAL = 3
 EVENT_WINDOW_SECONDS = 60
 HMM_SEQUENCE_LENGTH = 15
+FEATURE_COLUMNS = [
+    'File_Delete_archived', 'File_created', 'process-related', 'network-related',
+    'file-related', 'suspicious_path', 'system_executable', 'path_length',
+    'directory_depth', 'process_name_length', 'extension_similarity', 'file_name_entropy'
+]
 
 # --- NEW: Alerting Configuration ---
 ALERT_THRESHOLD = 0.50  # Minimum probability to trigger any alert
@@ -49,9 +54,13 @@ def read_new_events(conn, last_processed_id):
 
 def align_hmm_states(hmm_model):
     """Identifies which HMM state is 'malicious' based on mean entropy."""
-    state_means = hmm_model.means_.flatten()
-    malicious_state_index = np.argmax(state_means)
-    print(f"HMM malicious state identified as State {malicious_state_index} (Mean Entropy: {state_means[malicious_state_index]:.2f})")
+    entropy_index = FEATURE_COLUMNS.index('file_name_entropy')
+    state_means = hmm_model.means_[:, entropy_index]
+    malicious_state_index = int(np.argmax(state_means))
+    print(
+        "HMM malicious state identified as State "
+        f"{malicious_state_index} (Mean Entropy: {state_means[malicious_state_index]:.2f})"
+    )
     return malicious_state_index
 
 def count_recent_files_affected(events_df, window_seconds=60):
@@ -151,7 +160,7 @@ def main():
                         max_threat_event = event_dict
 
                     # 5. Update HMM Sequence
-                    observation = feature_vector[['file_name_entropy']].values
+                    observation = feature_vector.values
                     hmm_sequence.append(observation)
                     
                     if len(hmm_sequence) > HMM_SEQUENCE_LENGTH:

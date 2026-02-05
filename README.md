@@ -56,7 +56,7 @@ DriveTrail operates by safely monitoring the Google Drive client's metadata data
 
 1. **Per-event classification** (XGBoost)
 2. **Behavioral pattern detection** (Bayesian Evidence Fusion)
-3. **Temporal sequence analysis** (Hidden Markov Model)
+3. **Temporal sequence analysis** (Hidden Markov Model on multi-feature sequences)
 
 This multi-layered approach reconstructs and understands the "story" of an attack as it unfolds, enabling rapid detection and automated response.
 
@@ -97,7 +97,7 @@ DriveTrail uses a **5-stage inference pipeline** for high-accuracy, context-awar
                   ↓
 ┌─────────────────────────────────────────────────────────────┐
 │  5. HIDDEN MARKOV MODEL (HMM)                               │
-│  Temporal sequence analysis                                 │
+│  Temporal sequence analysis on multi-feature sequences      │
 │  Infers system state: Benign vs Malicious                   │
 │  Output: State sequence + Alert decision                    │
 └─────────────────┬───────────────────────────────────────────┘
