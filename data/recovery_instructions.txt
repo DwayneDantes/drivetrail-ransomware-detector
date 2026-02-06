@@ -3,7 +3,7 @@
                  DRIVETRAIL RECOVERY GUIDE                     
 ================================================================
 
-Generated: 2025-10-20 11:09:16
+Generated: 2026-02-06 13:53:36
 
 WARNING: RANSOMWARE ACTIVITY DETECTED - Drive sync has been paused.
 

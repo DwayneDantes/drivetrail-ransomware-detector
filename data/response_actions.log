@@ -34,3 +34,100 @@
 2025-10-20 11:22:23,126 - INFO - Alert sent: HIGH threat detected
 2025-10-20 11:22:23,136 - INFO - Alert logged to data\alerts.json
 2025-10-20 11:22:23,136 - INFO - Drive sync already paused.
+2026-01-30 19:48:35,093 - INFO - Taking action for HIGH threat (prob=0.8500)
+2026-01-30 19:48:35,101 - INFO - Alert sent: HIGH threat detected
+2026-01-30 19:48:35,113 - INFO - Alert logged to data\alerts.json
+2026-01-30 19:48:35,127 - INFO - Drive process (PID: 19316) suspended successfully.
+2026-01-30 19:51:37,635 - INFO - Taking action for HIGH threat (prob=0.8500)
+2026-01-30 19:51:37,641 - INFO - Alert sent: HIGH threat detected
+2026-01-30 19:51:37,653 - INFO - Alert logged to data\alerts.json
+2026-01-30 19:51:37,667 - INFO - Drive process (PID: 19316) suspended successfully.
+2026-01-30 19:54:34,684 - INFO - Taking action for HIGH threat (prob=0.8500)
+2026-01-30 19:54:34,690 - INFO - Alert sent: HIGH threat detected
+2026-01-30 19:54:34,701 - INFO - Alert logged to data\alerts.json
+2026-01-30 19:54:34,715 - INFO - Drive process (PID: 19316) suspended successfully.
+2026-02-06 01:21:39,954 - INFO - Taking action for MEDIUM threat (prob=0.7116)
+2026-02-06 01:21:39,962 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 01:21:39,975 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:43:27,389 - INFO - Taking action for MEDIUM threat (prob=0.7116)
+2026-02-06 11:43:27,398 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 11:43:27,409 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:47:15,548 - INFO - Taking action for MEDIUM threat (prob=0.6946)
+2026-02-06 11:47:15,548 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 11:47:15,558 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:47:45,592 - INFO - Taking action for HIGH threat (prob=0.7761)
+2026-02-06 11:47:45,593 - INFO - Alert sent: HIGH threat detected
+2026-02-06 11:47:45,603 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:47:45,617 - INFO - Drive process (PID: 18212) suspended successfully.
+2026-02-06 11:48:15,629 - INFO - Taking action for HIGH threat (prob=0.7761)
+2026-02-06 11:48:15,629 - INFO - Alert sent: HIGH threat detected
+2026-02-06 11:48:15,639 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:48:15,640 - INFO - Drive sync already paused.
+2026-02-06 11:48:46,020 - INFO - Taking action for CRITICAL threat (prob=0.9464)
+2026-02-06 11:48:46,020 - INFO - Alert sent: CRITICAL threat detected
+2026-02-06 11:48:46,030 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:48:46,031 - INFO - Drive sync already paused.
+2026-02-06 11:48:46,031 - WARNING - File not found for quarantine: DriveTrail_TEST_DO_NOT_DELETE\document_0.txt.encrypted
+2026-02-06 11:48:46,033 - INFO - Recovery report generated: data\recovery_instructions.txt
+2026-02-06 11:49:16,164 - INFO - Taking action for CRITICAL threat (prob=0.9612)
+2026-02-06 11:49:16,165 - INFO - Alert sent: CRITICAL threat detected
+2026-02-06 11:49:16,176 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:49:16,176 - INFO - Drive sync already paused.
+2026-02-06 11:49:16,177 - WARNING - File not found for quarantine: DriveTrail_TEST_DO_NOT_DELETE\README_TO_DECRYPT.txt
+2026-02-06 11:49:16,177 - INFO - Recovery report generated: data\recovery_instructions.txt
+2026-02-06 11:49:46,394 - INFO - Taking action for CRITICAL threat (prob=0.9895)
+2026-02-06 11:49:46,394 - INFO - Alert sent: CRITICAL threat detected
+2026-02-06 11:49:46,404 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 11:49:46,404 - INFO - Drive sync already paused.
+2026-02-06 11:49:46,405 - WARNING - File not found for quarantine: DriveTrail_TEST_DO_NOT_DELETE\normal_file_0.txt
+2026-02-06 11:49:46,405 - INFO - Recovery report generated: data\recovery_instructions.txt
+2026-02-06 11:50:16,551 - INFO - Taking action for MEDIUM threat (prob=0.7116)
+2026-02-06 11:50:16,551 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 11:50:16,561 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:39:45,942 - INFO - Taking action for HIGH threat (prob=0.8873)
+2026-02-06 13:39:45,949 - INFO - Alert sent: HIGH threat detected
+2026-02-06 13:39:45,959 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:39:45,972 - INFO - Drive process (PID: 18212) suspended successfully.
+2026-02-06 13:47:42,029 - INFO - Taking action for HIGH threat (prob=0.8873)
+2026-02-06 13:47:42,035 - INFO - Alert sent: HIGH threat detected
+2026-02-06 13:47:42,046 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:47:42,059 - INFO - Drive process (PID: 18212) suspended successfully.
+2026-02-06 13:50:03,140 - INFO - Taking action for MEDIUM threat (prob=0.6946)
+2026-02-06 13:50:03,141 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 13:50:03,153 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:50:33,192 - INFO - Taking action for HIGH threat (prob=0.7761)
+2026-02-06 13:50:33,192 - INFO - Alert sent: HIGH threat detected
+2026-02-06 13:50:33,202 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:50:33,203 - INFO - Drive sync already paused.
+2026-02-06 13:51:03,217 - INFO - Taking action for HIGH threat (prob=0.7761)
+2026-02-06 13:51:03,217 - INFO - Alert sent: HIGH threat detected
+2026-02-06 13:51:03,227 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:51:03,228 - INFO - Drive sync already paused.
+2026-02-06 13:51:33,696 - INFO - Taking action for CRITICAL threat (prob=0.9464)
+2026-02-06 13:51:33,697 - INFO - Alert sent: CRITICAL threat detected
+2026-02-06 13:51:33,707 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:51:33,707 - INFO - Drive sync already paused.
+2026-02-06 13:51:33,708 - WARNING - File not found for quarantine: DriveTrail_TEST_DO_NOT_DELETE\document_0.txt.encrypted
+2026-02-06 13:51:33,708 - INFO - Recovery report generated: data\recovery_instructions.txt
+2026-02-06 13:52:03,860 - INFO - Taking action for CRITICAL threat (prob=0.9612)
+2026-02-06 13:52:03,861 - INFO - Alert sent: CRITICAL threat detected
+2026-02-06 13:52:03,871 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:52:03,872 - INFO - Drive sync already paused.
+2026-02-06 13:52:03,872 - WARNING - File not found for quarantine: DriveTrail_TEST_DO_NOT_DELETE\README_TO_DECRYPT.txt
+2026-02-06 13:52:03,873 - INFO - Recovery report generated: data\recovery_instructions.txt
+2026-02-06 13:53:36,359 - INFO - Taking action for CRITICAL threat (prob=0.9895)
+2026-02-06 13:53:36,365 - INFO - Alert sent: CRITICAL threat detected
+2026-02-06 13:53:36,375 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:53:36,390 - INFO - Drive process (PID: 18212) suspended successfully.
+2026-02-06 13:53:36,391 - WARNING - File not found for quarantine: DriveTrail_TEST_DO_NOT_DELETE\normal_file_0.txt
+2026-02-06 13:53:36,391 - INFO - Recovery report generated: data\recovery_instructions.txt
+2026-02-06 13:54:30,713 - INFO - Taking action for MEDIUM threat (prob=0.5174)
+2026-02-06 13:54:30,714 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 13:54:30,724 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:54:36,930 - INFO - Taking action for MEDIUM threat (prob=0.5174)
+2026-02-06 13:54:36,930 - INFO - Alert sent: MEDIUM threat detected
+2026-02-06 13:54:36,940 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:54:39,949 - INFO - Taking action for HIGH threat (prob=0.8610)
+2026-02-06 13:54:39,950 - INFO - Alert sent: HIGH threat detected
+2026-02-06 13:54:39,959 - ERROR - Failed to send notification: Object of type float32 is not JSON serializable
+2026-02-06 13:54:39,959 - INFO - Drive sync already paused.

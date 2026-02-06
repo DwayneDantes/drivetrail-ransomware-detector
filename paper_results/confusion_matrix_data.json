@@ -1,0 +1,16 @@
+{
+  "confusion_matrix": [
+    [
+      39774,
+      1025
+    ],
+    [
+      38,
+      12095
+    ]
+  ],
+  "true_negatives": 39774,
+  "false_positives": 1025,
+  "false_negatives": 38,
+  "true_positives": 12095
+}
