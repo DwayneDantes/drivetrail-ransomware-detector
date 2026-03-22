@@ -35,22 +35,8 @@
 - 🔐 **High-entropy filenames** (encrypted/randomized names)
 - 📊 **Suspicious directory traversal patterns**
 
-### Why DriveTrail?
 
-**Traditional Antivirus:**
-- ❌ Relies on known malware signatures
-- ❌ Misses zero-day ransomware variants
-- ❌ Can't stop cloud propagation
-- ❌ No behavioral analysis
-
-**DriveTrail:**
-- ✅ Detects based on **behavior**, not signatures
-- ✅ Catches **novel ransomware** variants
-- ✅ **Pauses Google Drive sync** to prevent cloud propagation
-- ✅ Provides **forensic timeline** of attacks
-- ✅ **Protects all your devices** by stopping sync before damage spreads
-
-### How It Works
+### instructions
 
 DriveTrail operates by safely monitoring the Google Drive client's metadata database, feeding a stream of file events into a sophisticated inference pipeline that combines:
 
