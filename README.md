@@ -36,7 +36,7 @@
 - 📊 **Suspicious directory traversal patterns**
 
 
-### instructions
+### Instructions
 
 DriveTrail operates by safely monitoring the Google Drive client's metadata database, feeding a stream of file events into a sophisticated inference pipeline that combines:
 
